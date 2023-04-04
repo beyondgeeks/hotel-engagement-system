@@ -97,7 +97,7 @@ describe("test engagement system", () => {
 
     const premiumInput = screen.getByTestId("premium-count");
     const economyInput = screen.getByTestId("economy-count");
-    const premiumRooms = screen.getByTestId("economy-rooms");
+    const premiumRooms = screen.getByTestId("premium-rooms");
     const economyRooms = screen.getByTestId("economy-rooms");
     const premiumLabel = screen.getByTestId("premium-label");
     const economyLabel = screen.getByTestId("economy-label");
@@ -121,7 +121,7 @@ describe("test engagement system", () => {
 
     const premiumInput = screen.getByTestId("premium-count");
     const economyInput = screen.getByTestId("economy-count");
-    const premiumRooms = screen.getByTestId("economy-rooms");
+    const premiumRooms = screen.getByTestId("premium-rooms");
     const economyRooms = screen.getByTestId("economy-rooms");
     const premiumLabel = screen.getByTestId("premium-label");
     const economyLabel = screen.getByTestId("economy-label");
@@ -155,7 +155,7 @@ describe("test engagement system", () => {
 
     const premiumInput = screen.getByTestId("premium-count");
     const economyInput = screen.getByTestId("economy-count");
-    const premiumRooms = screen.getByTestId("economy-rooms");
+    const premiumRooms = screen.getByTestId("premium-rooms");
     const economyRooms = screen.getByTestId("economy-rooms");
     const premiumLabel = screen.getByTestId("premium-label");
     const economyLabel = screen.getByTestId("economy-label");
@@ -189,7 +189,7 @@ describe("test engagement system", () => {
 
     const premiumInput = screen.getByTestId("premium-count");
     const economyInput = screen.getByTestId("economy-count");
-    const premiumRooms = screen.getByTestId("economy-rooms");
+    const premiumRooms = screen.getByTestId("premium-rooms");
     const economyRooms = screen.getByTestId("economy-rooms");
     const premiumLabel = screen.getByTestId("premium-label");
     const economyLabel = screen.getByTestId("economy-label");
