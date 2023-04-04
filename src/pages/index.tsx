@@ -1,9 +1,12 @@
 import Head from "next/head";
 import { ChangeEvent, useState } from "react";
 
+import guests from "@/constants/guests.json";
+
 export default function Home() {
   const [premiumCount, setPremiumCount] = useState(3);
   const [economyCount, setEconomyCount] = useState(3);
+  const [remainGuests, setRemain] = useState<number[]>([...guests]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>, key: string) => {
     if (key === "premiumCount") {
@@ -26,6 +29,23 @@ export default function Home() {
           Automatic Hotel Engagement System
         </h1>
         <div className="container mx-auto">
+          <div data-testid="remain-guests">
+            <div className="font-bold text-xl">
+              Remain Guests ({remainGuests.length})
+            </div>
+            <div className="mt-5 flex">
+              {remainGuests?.map((guestPrice, index) => (
+                <div className="mr-2" key={`guest-${index}`}>
+                  <img
+                    src="assets/images/user_icon.png"
+                    width={100}
+                    height={100}
+                  />
+                  <p className="text-center">{`EUR ${guestPrice}`}</p>
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="grid grid-cols-3 gap-5 text-md mt-5 mx-auto items-end">
             <div>
               <label
